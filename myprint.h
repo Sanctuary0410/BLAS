@@ -1,15 +1,17 @@
-#include <stdio.h>
+#include<iostream>
 #include <vector>
 using namespace std;
 
-void printArray(double* arr,int len);
-/*输出数组的前len个元素*/
-void printArray(double* arr,int len)
+void printArray(int len, double* arr);
+void printMatrix(int m, int n, vector<vector<double> > A);
+
+
+void printArray(int len, double* arr)
 {
-        for (int i = 0; i < len; i++)
-        {
-                printf("%/n",arr[i]);
-        }
+	for (int i = 0; i < len; i++)
+	{
+		cout << arr[i] << endl;
+	}
 }
 
 void printMatrix(int m,int n, vector<vector<double>> A)

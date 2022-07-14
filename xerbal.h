@@ -1,14 +1,12 @@
 #include<iostream>
-#include<stdio.h>
-
+using namespace std;
 
 void xerbla(char srname[], int info);
 int MAX(int x, int y);
 int MIN(int x, int y);
-using namespace std;
 
 void xerbla(char srname[], int info) {
-	printf("On entry to parameter number  had an illegal value "); 
+	cout << "On entry to parameter number  had an illegal value " <<endl; 
 	cout << srname << endl;
 	cout << info << endl;
 	return;
